@@ -9,7 +9,8 @@ const ProductDetail = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const getProductsDetail = async() => {
-    let url = `http://localhost:5000/products/${id}` /* 데이터확인O */
+    //let url = `http://localhost:5000/products/${id}` /* 데이터확인O */
+    let url = `https://my-json-server.typicode.com/learn2306/meal/products/${id}`
 
     let response = await fetch(url);
     let data = await response.json();
