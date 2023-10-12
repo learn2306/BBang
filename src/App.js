@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { Container } from 'react-bootstrap';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Intro from './page/Intro';
+import Story from './page/Story';
+import Header from './component/Header';
+import Navbar from './component/Navbar';
+import ProductAll from './page/ProductAll';
+import ProductDetail from './page/ProductDetail';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Routes>
+        <Route path='/' element={<Intro />} />    
+        <Route path='/story' element={<Story />} />    
+        <Route path='/header' element={<Header />} />
+        <Route path='/navbar' element={<Navbar />} />
+        <Route path='/productAll' element={<ProductAll />} />  {/*12 /work/productAll->/productAll, 데이터확인O */}    
+        <Route path='/product/:id' element={<ProductDetail />} />
+      </Routes>
+    </Container>    
   );
 }
 

@@ -1,38 +1,203 @@
-.App {
+/* Intro.js */
+.intro-area {
   text-align: center;
+  margin: 100px auto;
+  width: 1000px;
+}
+.intro {
+  text-decoration: none;
+  color: olivedrab;
+  font-size: 28px;  
+  font-weight: 600; 
+  margin-bottom: 60px;
+}
+.intro-area img {
+  width: 100%;
+  padding: 50px 0; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header.js */
+.header {
+  width: 1000px;
+  text-align: center;
+  margin: 60px auto;  
+}
+.he-intro {  
+  text-decoration: none;  
+  color: olivedrab;
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+.he-work {
+  text-decoration: none;
+  color: skyblue;
+  font-size: 30px;
+  font-weight: 600; 
+  margin-right: 30px;
+}
+.he-story {
+  text-decoration: none;
+  color: orange;
+  font-size: 30px;
+  font-weight: 600; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navbar.js */
+.nav-header {
+  width: 1000px;
+  margin: 0 auto;
+}
+.logo img {
+  width: 100%;
+}
+.login {
+  text-align: right;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.meal {
+  width: 1000px;
+  margin: 0 auto; 
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.menu { 
+  width: 80%;
+  text-align: left;
+  float: left;
+}
+.menu li {
+  list-style: none;
+  width: 200px;
+  float: left;
+  font-size: 20px;
+  font-weight: 600; 
+  color: #888;   
+}
+.search-area {
+  width: 20%;
+  float: right;
+  text-align: right;
+}
+.search-area input {
+  padding-left: 10px;  
+  border: 1px solid #ccc; 
+  border-radius: 6px; 
+  font-size: 14px;
+  padding: 3px 0 3px 10px;
+  margin-bottom: 30px;
+}
+/* Story.js */
+.sungsim {width: 1000px; margin: 0 auto;}
+h1 {
+  text-align: center;
+  margin: 30px auto;
+  font-weight: 600;
+  color: #666;
+}
+li {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.story {overflow: hidden}
+.story img {
+  float: left;
+  width: 40%;
+  margin: 40px 20px 0 20px;
+}
+.story p {
+  float: left; width: 50%;
+  margin: 40px 20px 0 20px; 
+}
+.story .text {
+  width: 98%;
+  margin: 40px 20px 0 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* ProductCard.js */
+.product-list {
+  color: #444;  
+  margin-bottom: 30px;  
+}
+.product-list .product-img {
+  overflow: hidden;
+  width: 220px; height: 220px;
+  margin-bottom: 10px;  
+}
+.product-img img {
+  max-width: 100%; transition: 0.3s;
+}
+.product-list .choice {
+  font-size: 15px;
+  color: #faa405;
+}
+.product-list .title {
+  font-size: 16px; 
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.product-list .price {
+  color: green;
+  font-weight: 500;  
+}
+.product-list .best {
+  color: #8c8075;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ProductDetail.js */
+.product-detail {
+  width: 1000px;
+  margin: 20px auto; 
+}
+.product-img {    
+  margin-right: 20px;
+}
+.product-img img {
+  width: 95%;
+}
+.detail-info {
+  width: 560px;
+  padding: 10px;
+}
+.detail-info div {margin-bottom: 10px;}
+.detail-info .best { 
+  color: #8c8075;  
+  font-weight: 600;
+  font-size: 22px;
+}
+.detail-info .title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #555;
+}
+.detail-info .content {margin-bottom: 30px; line-height: 1.7;}
+.detail-info .price {
+  color: green;    
+  font-size: 28px;
+  font-weight: 700;
+}
+.detail-info .choice {
+  color: rgb(245, 161, 93);
+  font-weight: 600;
+}
+.detail-info select {width: 300px;}
+.detail-info button {
+  margin: 30px 0;
+  background: rgb(244, 164, 2);
+  border: none;
   color: white;
+  font-weight: 700;
+}
+.detail-info button:hover { 
+  background: rgb(237, 109, 4);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ProductAll.js */
+.productlist {
+  width: 1000px;
+  margin: 0 auto;
 }
